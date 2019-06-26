@@ -1,0 +1,64 @@
+facts = True
+incorrect = False
+
+age = 34
+is_over_age = age >= 21
+print(is_over_age)
+
+is_age_under = age < 21
+print (is_age_under)
+
+is_twenty_one = age == 21
+print(is_twenty_one)
+
+my_path_number = 4
+user_guess_number = input("Enter a number: ")
+print(my_path_number == user_guess_number)
+
+# If you try to run Line 14-16 you will get a False, reason being is that line 15 would be considered a string and that is like comparing Apples and Lemons. It would have to be a number in order to be compared  with 4. Below is the correct way by using the Int function
+
+my_path_number = 4
+user_guess_number = int(input("Enter a number: "))
+print(my_path_number == user_guess_number)
+
+yes = True and True
+no = True and False
+print(yes)
+print(no)
+
+ # and function will give you 
+ # or is used to get the second value if the first one is False. If the first one is True, it gets the first value
+
+ which_is_it = True or False
+ print(which_is_it) 
+ 
+ which_one = False or True 
+ print(which_one)
+ 
+ first_one = True or 3*333333333333333
+ print(first_one) # Python will ignore this mathematical problem because the first one is True, so it will automatically give you the first value
+
+neither = False or False
+print(neither) # Being that the first value is False, you will get the second value because the first value is False
+
+absolutely = not False # the -not- function will invert whatever it is behind it. So not False will be True
+absolutely_no = not True # will be False
+
+print(absolutely)
+print(absolutely_no)
+
+is_programmer = True
+is_learning = False
+
+awesome = is_programmer == is_learning 
+print(awesome)
+
+less_awesome = is_programmer and not is_learning
+
+#this weekend I shall learn more function 
+
+
+
+
+
+
